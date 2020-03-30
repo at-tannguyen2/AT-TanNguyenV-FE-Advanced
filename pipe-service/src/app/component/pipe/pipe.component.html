@@ -1,0 +1,7 @@
+<div class="list-item">
+  <div class="product-item" *ngFor="let product of arrProduct">
+    <p class="title-item">{{ product.title | formatData :0 : 40}}</p>
+    <img class="img-item" src="{{ product.src }}" alt="" />
+    <p class="content-item">{{ product.content | formatData : 0 :100}}</p>
+  </div>
+</div>
